@@ -1,0 +1,820 @@
+---
+execute:
+  echo: true
+format:
+  revealjs:
+    width: 1245
+    height: 700
+    menu: false
+    controls: true
+    transition: fade
+    auto-stretch: false
+    embed-resources: false
+    toc: false
+    center: true
+    slide-number: false
+    preview-links: false
+    output-file: "datastorytelling"
+    theme:
+        - simple
+        - style/style_background_nerdearla.scss
+filters: 
+  - pyodide
+---
+
+## Use the arrows to navigate the presentation.
+
+--- 
+
+## { .custom-slide }
+
+&#32; 
+
+---
+
+##
+
+**Muerte por PowerPoint (sustantivo):**
+
+[Una experiencia sumamente desagradable y tediosa que resulta de asistir a una presentación que abusa del uso de diapositivas cargadas de texto, a menudo con fuentes diminutas y listas interminables. Esta forma de presentación, carente de creatividad y dinamismo, suele fallar en capturar la atención del público y puede llevar a una desconexión total de la audiencia.]{style="font-size: .6em"}
+
+
+[Síntomas comunes:]{style="font-size: .6em"}
+
+
+[La víctima de una "muerte por PowerPoint" puede presentar ojos vidriosos y soñolientos, episodios repetidos de bostezos y un deseo abrumador de escapar del entorno. Estos síntomas son indicativos de una sobrecarga de información y una falta de estímulos visuales o narrativos que mantengan el interés.]{style="font-size: .5em"}
+
+
+[Ejemplo:]{style="font-size: .5em"}
+
+
+["Después de una hora de escuchar la voz monótona del presentador mientras pasaba diapositiva tras diapositiva, sentí que estaba muriendo por PowerPoint. Era como una tortura visual."]{style="font-size: .5em"}
+
+
+[Véase también: infierno en tierra, tortura por presentación, pesadilla de PowerPoint]{style="font-size: .3em"}
+
+::: {.notes}
+(Reading with plain monotone voice)
+:::
+---
+
+## { .custom-title }
+
+::: {.notes}
+Welcome to my talk: Avoiding deaths by powerpoint - Data Storytelling and Python to the rescue.
+
+Just to be fair, deaths by powerpoint are not caused by the software. It's the speaker that lacks data storytelling tools and skills to make it more engaging! 
+:::
+---
+
+## Agenda { .custom-slide }
+::: columns
+::: {.column width="30%" .incremental}
+* &#32;
+* No
+* Nope
+* Jamás
+:::
+::: {.column width="70%" .fragment}
+**Regla de Storytelling #1:** 
+
+Nunca reveles el final antes de tiempo.
+
+Siempre eleva la tensión y el dramatismo.
+:::
+:::
+
+::: {.notes}
+Don't give up the reveal. 
+No book or joke starts by revealing the ending, why would you? 
+:::
+
+---
+
+
+## Agenda (v2) { .custom-slide }
+::: .incremental
+1. Nunca reveles el [final]{style="background-color:black;"}
+2. Los detalles son importantes, pero [no **todos** los detalles son importantes.]{style="background-color:black;"}
+3. Tu primera versión será [horrible.]{style="background-color:black;"}
+4. [Muestra más]{style="background-color:black;"}, explica menos.
+:::
+
+::: {.notes}
+Opción 2: Una agenda misteriosa.
+:::
+
+---
+
+## { .custom-section }
+[Data Storytelling]{style="font-size: 1em"}
+
+[¿Por qué Data Storytelling?]{style="font-size: 1.5em"}
+
+---
+
+## ¿Storytelling?
+::: columns
+::: {.column width="50%"}
+![](images/fire.jpeg){fig-align="center"}
+:::
+::: {.column width="50%" .fragment .center}
+&#32;<br><br><br><br>
+Las historias
+
+son la primera tecnología humana.
+:::
+:::
+
+:::{.notes}
+People have been telling stories since the begining, because it's just the way our brains work. 
+[click]
+It's a "built-in technology" because it allows for knowledge transmission. 
+It allows collective learning and cooperation at small and large scale.
+
+Stories are not a random collection of facts. There's a very specific order: start, conflict, conflict resolution, ending. 
+That's the pattern that the brain craves, because it can learn from it. That's why we consume so much stories in any form: books, comics, tv-series, movies, etcetera.
+So, what do you do when you know how something works? You hack it, of course!
+:::
+
+---
+
+## Esos cerebros tan hackables...
+::: columns
+::: {.column width="45%"}
+Regla del máximo y final 
+
+(Peak-End Rule)
+![](images/storytelling/sketplanation.png){fig-align="center"}
+[Imagen por sketplanation]{style="font-size: 0.6em; color: grey"}
+:::
+::: {.column width="55%" .fragment}
+[.]{style="font-size: 1.5em; color: white"}
+
+![](images/storytelling/got.jpg){fig-align="center"}
+[Rating de Game of Thrones, por Kelvin Neo]{.fragment style="font-size: 0.6em; color: grey"}
+:::
+:::
+
+:::{.notes}
+The peak-end rule is a fun fact. You remember something for:
+What was the most intense emotion
+How it ended
+You can use this to build your presentation around the big ending you want. 
+If you are not convinced, let me give you a real example. 
+[click]
+We, collectively, enjoyed 7 seasons of this great tv series. Can you guess wich one it is?
+[click]
+Yes, the whole game of thrones series is remembered by the not-so-great ending and the peak scenes (do you remember the red wedding?)
+What's really interesting is that is not symmetrical. We can forgive a bad first season, but never a bad grand finale. Endings matter!
+:::
+
+---
+
+## 
+::: columns
+::: {.column width="60%"}
+&#32;<br><br><br>
+Data Storytelling:  
+
+Usar **trucos** de Storytelling (narrativa) para crear presentaciones que serán **recordadas** y que causarán **impacto**
+
+:::
+::: {.column width="40%" .fragment}
+![](images/sherlock.jpeg){fig-align="center"}
+:::
+:::
+
+. . .
+
+::: {style="text-align: center;"}
+Las emociones generan acciones
+:::
+
+:::{.notes}
+We are only as good as our communication skills. If you’re really really good, but cannot articulate your ideas and communicate effectively, you’ll only be as good as someone bad but with great communication skills. 
+Think of storytelling is a bag of tricks you can use to make better presentations.
+Presentations that will change something on your audience.
+[click]
+Think of Sherlock Holmes. We enjoyed his stories, not because he was a genius, but  because of how Doctor John Watson describe the cases. It’s not enough to crack the case and solve the mystery. We need to be able to collect the important facts and to tell an engaging story. 
+[click]
+The key point is: Only emotions create actions.
+:::
+
+---
+
+## El mejor ejemplo
+
+::: columns
+::: {.column width="30%" .fragment fragment-index=1}
+![](images/storytelling/spotify1.jpeg){fig-align="center"}
+:::
+::: {.column width="40%"}
+&#32;<br><br><br>
+[¿Podemos hacer que millones de personas compartan estadísticas en redes sociales?]{style="text-align:center;"}
+:::
+::: {.column width="30%" .fragment fragment-index=1}
+![](images/storytelling/spotify2.jpeg){fig-align="center"}
+:::
+:::
+
+
+:::{.notes}
+Would you agree to spend 10 minutes to share on social media about some data statistics a company made? No? Well, I’m pretty sure you did.
+[click]
+You probably remember Spotify wrapped. 
+Can you remember how you felt after you saw your yearly data analysis? After all, it's just some stats, but it feels more than that. Personally, I always learn something about my musical taste, and it's weird to see that it has changed over the years. Anyway. It's engaging because it's told as a story. Not cold numbers.
+:::
+
+--- 
+
+## { .custom-section }
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Herramienta #1: Visualización]{style="font-size: 2em"}
+
+:::{.notes}
+So, let me tell you about how visualization and storytelling are related.
+:::
+
+---
+
+## Data Exploratory Viz
+
+![](images/viz/looker.png){width=400 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}
+
+. . .
+
+![](images/viz/tableau.png){.absolute top=125 left=25 width=800 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"}
+
+. . .
+
+![](images/viz/pbi.png){.absolute top=150 left=50 width=800 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"}
+
+. . .
+
+[¡Demasiadas opciones! <br> La audiencia **no puede** ser responsable de encontrar el valor.]{ style="background-color: #fff" }
+
+:::{.notes}
+Google Looker [click] Tableau [click] PowerBI.
+As the name suggests, they are great tools to explore your data. This is a previous step to telling a story. This would be the equivalent to do the footwork of a reporter. Getting the news.
+But exploratory visualization is not what you need on your presentation. 
+You need to CRAFT what YOU want your audience to see.
+[click]
+Your audience is not resposible of finding the insights. You are.
+:::
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #2:** 
+
+Los detalles son importantes, 
+
+[pero no **todos** los detalles son importantes.]{.fragment}
+:::
+:::
+
+:::{.notes}
+So, details are important. [click] But not all details are important.
+On writing this is called the Chekhov's Gun: 
+If in the first act you describe a pistol hung on the wall, then the pistol must be fired at some point. Otherwise don’t put it there. (Chekhov's Gun)
+:::
+
+---
+
+## Data Explanatory Viz
+
+::: columns
+::: {.column width="70%" .incremental}
+¡Muchas librerías excelentes en Python!
+
+* Clásicas: Matplotlib
+* Emergentes: Seaborn, Plotly, Altair
+* Otras: bokeh, plotnine, pygal y más...
+:::
+::: {.column width="30%"}
+![](images/viz/matplotlib.png){fig-align="center"}
+:::
+:::
+
+. . . 
+
+::: {style="text-align:center"}
+Elige una y domínala.
+:::
+
+:::{.notes}
+To do explanatory visualizations, you need to KNOW what you want to share.
+We are lucky to have so many great python libraries: [click]
+The old classic matplotlib [click]
+Seaborn, plotly, altair [click]
+bokeh, plotnine, pygal, and many others!
+[click]
+My advice: pick one and master it. You need to escape from default settings to do good data visualizations! 
+:::
+
+---
+
+## 
+::: columns
+::: {.column width="50%"}
+![](images/dst_before.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+![](images/dst_after.png){fig-align="center"}
+:::
+:::
+
+. . .
+
+No compartas números. Comparte una historia.
+
+[(C) Storytelling with Data, por Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
+
+
+:::{.notes}
+Let me share an example from one of my favorite books on data storytelling.
+Here you can see a visualization with a standard, default visualization. 
+Nothing wrong with it. But it's boring.
+[click]
+Now, let's use the same data but reveal the story behind. You see things on a completely different perspective. You just put numbers where are needed, and call for an action! 
+[click]
+So, don't share numbers. Share a story. 
+:::
+
+---
+
+## Vizzu: Una librería para Data Storytelling
+
+```{python}
+#| echo: false
+
+import pandas as pd
+from ipyvizzu import Data, Config, Style
+from ipyvizzustory import Story, Slide, Step
+
+# Import the date
+df = pd.read_excel("./data/nerdearla_conference.xlsx", 
+            dtype={"año": str, "lugar": str, "asistentes": int, "modalidad":str})
+df["year_num"] = df["año"].astype(int)
+
+# Create story object, add data to it
+data = Data()
+data.add_df(df)
+story = Story(data=data)
+
+# Set the size of the HTML element and activate tooltip
+story.set_size("100%", "600px")
+story.set_feature("tooltip", True)
+
+# Visualization 1
+slide = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "title": "Asistentes a Nerdearla ",
+            }
+        ),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Visualization 2
+slide = Slide(
+    Step(
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "stackedBy": "modalidad",
+                "title": "Asistentes a Nerdearla",
+            }
+        ),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Visualization 3
+slide = Slide(
+    Step(
+        Data.filter("record.year_num >= 2020"),
+        Config.stackedColumn(
+            {
+                "x": "año",
+                "y": "asistentes",
+                "stackedBy": "modalidad",
+            }
+        ),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+
+# Visualization 4
+slide = Slide(
+    Step(
+        Config.percentageColumn(
+            {
+                "x": "año",
+                "y": "porcentaje",
+                "stackedBy": "modalidad",
+                "title": "Asistentes a Nerdearla (porcentaje)",
+            }
+        ),
+        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+story.add_slide(slide)
+
+# Play the created story!
+story.play()
+```
+
+---
+
+## { .custom-section }
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Herramienta #2: IA]{style="font-size: 2em"}
+
+:::{.notes}
+Let's now discuss another interesting tool: Artificial Intelligence.
+:::
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #3:** 
+
+Tu primera versión siempre será un borrador horrible.
+:::
+:::
+
+:::{.notes}
+I want to relate this point to Regla de Storytelling #3: Your first draft is not gonna be good. Deal with it.
+:::
+---
+
+##
+::: columns
+::: {.column width="60%"}
+&#32;<br><br>
+
+* Usar chatbots de IA para: 
+  * Analogías y ejemplos
+  * Mejores traducciones
+  * Prompts para crear imágenes
+* No busques imágenes, créalas!
+:::
+::: {.column width="40%" .fragment}
+![](images/ai/choice.jpeg){fig-align="center"}
+:::
+:::
+
+::: {.columns style="text-align: center" .fragment}
+::: {.column width="100%"}
+Utiliza tu tiempo inteligentemente.
+:::
+:::
+
+:::{.notes}
+AI can also be a good source of inspiration and help when making better presentations.
+It's really helpful to create images to complement your talk and illustrate your points. Use it to get ideas, analogies, examples, or event prompts to create better images. You can use AI to get your first draft very fast, and iterate from there.
+Think of AI as the friend that gives you some good and bad ideas. It's your responsability to select the good ones! For every image I put on the presentation, there are 10, 20 or more that I did not use!
+:::
+
+---
+
+## { .custom-section }
+
+[Data Storytelling]{style="font-size: 1em"}
+
+[Herramienta #3: Presentación]{style="font-size: 2em"}
+
+:::{.notes}
+Probably one of the tools where you can improve the most: presentation software.
+:::
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #4:** 
+
+[Explicar menos]{style="color: red"} y [mostrar más]{style="color: green"}
+
+(Show, don't tell)
+:::
+:::
+
+:::{.notes}
+So this Regla de Storytelling is one of the simplest but one of the hardest.
+Show, don't tell. Let me give you an example.
+:::
+
+---
+
+## [Explicar menos]{style="color: red"} y [mostrar más]{style="color: green"}
+
+::: columns
+::: {.column width="50%" .fragment fragment-index=1}
+[Guido estaba feliz porque solucionó el error en su código.]{style="color: red"}
+:::
+::: {.column width="50%" .fragment fragment-index=2}
+[Los ojos de Guido se iluminaron cuando la terminal finalmente se ejecutó sin errores. 
+Una amplia sonrisa se extendió por su rostro. 
+Se levantó de su silla de un salto, con los puños en alto en señal de triunfo. 
+"¡Sí!" exclamó, mientras saboreaba el momento de triunfo.]{style="color: green"}
+:::
+:::
+
+:::{.notes}
+Can you tell the difference between these two examples?
+[click]
+[click]
+You cannot tell someone to feel something. You have to give them the means and reasons to feel somthing.
+:::
+
+---
+
+## Herramientas para presentación
+
+* Clásica: PowerPoint
+* Herramientas **"Show don't tell"**: 
+  * quarto
+  * jupyter + RISE
+  * html & webapps
+* Otros: canvas, revealjs, prezi
+
+:::{.notes}
+This relates to presenting software because the classic powerpoint software is not very helpful to share code. 
+To be honest, I fine tune my presentations till the last minute - inserting code screenshots is not fun! There are better ways.
+There are a couple of "show dont tell" tools: quarto, jupyter + RISE, and streamlit.
+Let me show you a bit of them.
+:::
+---
+
+## 
+
+::: columns
+::: {.column width="60%"}
+&#32;<br><br>
+[quarto]{style="font-size: 1em; color: gray"}
+
+Un sistema de publicación científica y técnica de código abierto.
+
+Se centra en el markdown científico, documentos dinámicos e interactivos basados en código (Python/R/Julia).
+:::
+::: {.column width="40%"}
+![https://quarto.org/](images/quarto/quarto2.png)
+:::
+:::
+
+:::{.notes}
+Quarto is a project from POSIT - they are actually on one of the booths, go get some stickers! You create a plain markdown, so the files and repos are clean and easy to maintain. You can create pretty much anything: Books, websites, and presentations. It’s quite incredible. This presentation has been made in quarto, BTW. For presentations, the markdown file is rendered into a html page with the revealjs library. It’s just a html webpage, so you can share it around and people should be able to open it without to much trouble - or convert it to pdf. 
+:::
+
+---
+
+## 
+
+::: columns
+::: {.column width="40%"}
+[Código: example.qmd]{style="font-size: 0.5em; color: gray"}
+
+```
+---
+title: "Habits"
+author: "John Doe"
+format:
+  revealjs:
+    transition: fade
+    theme: black
+    toc: true
+    center: true
+---
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+---
+
+## Going to sleep 
+::: { .incremental }
+
+- Get in bed
+- Count sheep
+
+:::
+```
+:::
+
+::: {.column width="60%"}
+[Slides: example.html]{style="font-size: 0.5em; color: gray"}
+
+```{=html}
+<iframe width=600 height=400 src="quarto_min.html"></iframe>
+```
+:::
+:::
+
+
+
+:::{.notes}
+So here on the left I have the code that produces the slides on the right.
+As you can see, it's just a plain file.
+It starts with a configuration part, and lots of other options are possible.
+You get the table of contents for free (if you want it!)
+You can even do incremental slides or reveal by fragments.
+You have to compile/render before the presentation, so little changes of getting errors during the presentation.
+But - it cannot do realtime code execution. It's not design for.
+:::
+
+---
+
+## 
+
+```{pyodide-python}
+saludo = "Hola"
+nombre = "Nerdearla"
+print(saludo + " " + nombre)
+```
+
+&#32;<br><br>
+
+```{pyodide-python}
+# ¿Que vino primero, el huevo o la gallina?
+sorted(['🥚','🐔'])
+```
+
+---
+
+## 
+
+::: columns
+::: {.column width="40%"}
+&#32;<br><br>
+
+[Jupyter + RISE]{style="font-size: 1em; color: gray"}
+
+Extensión de Jupyter notebook/lab para transformar un notebooks en slides de revealjs.
+:::
+::: {.column width="60%"}
+![https://rise.readthedocs.io/](images/rise/rise.png)
+:::
+:::
+
+:::{.notes}
+An alternative to quarto is to use jupyter notebook and use the rise extension.
+You have to manually define each of your cells to be a part of a slide or to be skipped.  
+:::
+---
+
+[Jupyter + RISE]{style="font-size: 1em; color: gray"}
+
+<img style="width:80%;" src="./images/rise/basic_usage.gif">
+
+:::{.notes}
+You click on the "launch slideshow" button, and a dynamic presentation is created on the fly. Same as quarto, it uses the revealjs javascript library as backend, but it can execute python code (or your kernel's language) on the fly. This is very useful if you are running a tutorial or something that needs that kind of interactivity.
+:::
+---
+
+## 
+
+[HTML & webapps]{style="font-size: 1em; color: gray"}
+
+Usa la herramienta adecuada a lo que quieras enseñar.  
+
+Innovar es llamativo.
+
+<img style="width:80%;" src="./images/streamlit/pyconchile2021.gif">
+
+:::{.notes}
+Sometimes it just makes sense. I did a presentation on PyCon Chile 2021 about Streamlit, and it felt natural to explain the library using the library to create the presentation. It made sense, as I could show the code and execute the code, without having to go back and forth between a presentation and a terminal. The main point is, again, Show dont tell. On presentations about code, don't tell me how to use it, show me how to use it!
+:::
+---
+
+## Flujo de decisión
+::: { .incremental }
+
+* **PowerPoint**: Presentación sin código de un solo uso
+* **Quarto**: Charlas a partir de documentos relacionados (libros, artículos)
+* **Jupyter + RISE**: Talleres o clases. Ejecutar código es importante
+* **html+webapps**: Presentaciones personalizadas/experimentales
+:::
+
+:::{.notes}
+My decision flow to choose a presentation sofware goes as:
+[click]
+PowerPoint: Single use no-code presentation. When I have no time. 
+[click]
+Quarto: Talks from related documents (books, articles) - but no need to execute code!
+[click]
+Jupyter + RISE: Workshops or classes. Executing code is important.
+[click]
+html+webapps: Customized/experimental presentations. 
+Nevertheless, I still follow the data Regla de Storytellings. It's just the software that it changes. I have to confess, my slides are kind of my babies. I spent too much time on them, tweaking, changing small details only I will notice, learning how to push the software a bit beyond limits. I think people can notice when you put love into something. 
+:::
+
+---
+
+## { .custom-section }
+[Final]{style="font-size: 2em"}
+
+:::{.notes}
+So, let's wrap up.
+:::
+
+---
+
+## Data Storytelling es ... { .custom-slide }
+::: columns
+::: {.column width="5%"}
+:::
+::: {.column width="90%" .incremental}
+&#32;<br><br>
+
+* Habilidad: puede aprenderse
+* Enorme diferenciador
+:::
+:::
+
+---
+
+## Agenda (v2) { .custom-slide }
+::: .incremental
+1. Nunca reveles el [**final**]{.fragment style="color:white;background-color:black;"}
+2. Los detalles son importantes, pero [no **todos** los detalles son importantes]{.fragment style="color:white;background-color:black;"}
+3. Tu primera versión será [**horrible**]{.fragment style="color:white;background-color:black;"}
+4. [**Muestra más**]{.fragment style="color:white;background-color:black;"}, explica menos.
+:::
+
+::: {.notes}
+La solución.
+:::
+
+---
+
+**Libros Storytelling**
+
+* [Storyworthy, Matthew Dicks]{style="color:grey;"}
+* [Made to Stick, Chip Heath y Dan Heath]{style="color:grey;"}
+
+**Libros Data Storytelling**
+
+* [Storytelling with Data, Cole Nussbaumer Knaflic]{style="color:grey;"}
+* [Data Visualization & Storytelling, Jose Berengueres y Marybeth Sandell]{style="color:grey;"}
+
+---
+
+
+## Feedback
+
+Un último consejo ...
+
+[¡Pide retroalimentación de tus presentaciones!]{.fragment}
+
+[¡Aprovecha de hacer crecer tu red de contactos!]{.fragment}
+
+---
+
+## 
+::: {.columns style="text-align: center"}
+::: {.column width="10%"}
+:::
+::: {.column width="40%"}
+![](images/survey/QR_code_english.png){fig-align="center"}
+https://tinyurl.com/ycxj9ep5
+:::
+::: {.column width="40%"}
+![](images/seba_avatar_gmail.png){fig-align="center"}
+[¡Gracias!]{style="text-align: center;"}
+:::
+:::
+
+::: {style="text-align: center"}
+[sebastiandres | https://sebastiandres.xyz]{style="font-size: 0.75em; color: gray"}
+:::
