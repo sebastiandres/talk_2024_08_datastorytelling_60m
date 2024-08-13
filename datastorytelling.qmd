@@ -53,17 +53,12 @@ filters:
 
 [Véase también: infierno en tierra, tortura por presentación, pesadilla de PowerPoint]{style="font-size: .3em"}
 
-::: {.notes}
-(Reading with plain monotone voice)
-:::
 ---
 
 ## { .custom-title }
 
 ::: {.notes}
-Welcome to my talk: Avoiding deaths by powerpoint - Data Storytelling and Python to the rescue.
-
-Just to be fair, deaths by powerpoint are not caused by the software. It's the speaker that lacks data storytelling tools and skills to make it more engaging! 
+Blank
 :::
 ---
 
@@ -84,11 +79,6 @@ Siempre eleva la tensión y el dramatismo.
 :::
 :::
 
-::: {.notes}
-Don't give up the reveal. 
-No book or joke starts by revealing the ending, why would you? 
-:::
-
 ---
 
 
@@ -98,10 +88,6 @@ No book or joke starts by revealing the ending, why would you?
 2. Los detalles son importantes, pero [no **todos** los detalles son importantes.]{style="background-color:black;"}
 3. Tu primera versión será [horrible.]{style="background-color:black;"}
 4. [Muestra más]{style="background-color:black;"}, explica menos.
-:::
-
-::: {.notes}
-Opción 2: Una agenda misteriosa.
 :::
 
 ---
@@ -126,50 +112,8 @@ son la primera tecnología humana.
 :::
 :::
 
-:::{.notes}
-People have been telling stories since the begining, because it's just the way our brains work. 
-[click]
-It's a "built-in technology" because it allows for knowledge transmission. 
-It allows collective learning and cooperation at small and large scale.
-
-Stories are not a random collection of facts. There's a very specific order: start, conflict, conflict resolution, ending. 
-That's the pattern that the brain craves, because it can learn from it. That's why we consume so much stories in any form: books, comics, tv-series, movies, etcetera.
-So, what do you do when you know how something works? You hack it, of course!
-:::
-
 ---
 
-## Esos cerebros tan hackables...
-::: columns
-::: {.column width="45%"}
-Regla del máximo y final 
-
-(Peak-End Rule)
-![](images/storytelling/sketplanation.png){fig-align="center"}
-[Imagen por sketplanation]{style="font-size: 0.6em; color: grey"}
-:::
-::: {.column width="55%" .fragment}
-[.]{style="font-size: 1.5em; color: white"}
-
-![](images/storytelling/got.jpg){fig-align="center"}
-[Rating de Game of Thrones, por Kelvin Neo]{.fragment style="font-size: 0.6em; color: grey"}
-:::
-:::
-
-:::{.notes}
-The peak-end rule is a fun fact. You remember something for:
-What was the most intense emotion
-How it ended
-You can use this to build your presentation around the big ending you want. 
-If you are not convinced, let me give you a real example. 
-[click]
-We, collectively, enjoyed 7 seasons of this great tv series. Can you guess wich one it is?
-[click]
-Yes, the whole game of thrones series is remembered by the not-so-great ending and the peak scenes (do you remember the red wedding?)
-What's really interesting is that is not symmetrical. We can forgive a bad first season, but never a bad grand finale. Endings matter!
-:::
-
----
 
 ## 
 ::: columns
@@ -191,16 +135,6 @@ Usar **trucos** de Storytelling (narrativa) para crear presentaciones que serán
 Las emociones generan acciones
 :::
 
-:::{.notes}
-We are only as good as our communication skills. If you’re really really good, but cannot articulate your ideas and communicate effectively, you’ll only be as good as someone bad but with great communication skills. 
-Think of storytelling is a bag of tricks you can use to make better presentations.
-Presentations that will change something on your audience.
-[click]
-Think of Sherlock Holmes. We enjoyed his stories, not because he was a genius, but  because of how Doctor John Watson describe the cases. It’s not enough to crack the case and solve the mystery. We need to be able to collect the important facts and to tell an engaging story. 
-[click]
-The key point is: Only emotions create actions.
-:::
-
 ---
 
 ## El mejor ejemplo
@@ -218,15 +152,101 @@ The key point is: Only emotions create actions.
 :::
 :::
 
+--- 
 
-:::{.notes}
-Would you agree to spend 10 minutes to share on social media about some data statistics a company made? No? Well, I’m pretty sure you did.
-[click]
-You probably remember Spotify wrapped. 
-Can you remember how you felt after you saw your yearly data analysis? After all, it's just some stats, but it feels more than that. Personally, I always learn something about my musical taste, and it's weird to see that it has changed over the years. Anyway. It's engaging because it's told as a story. Not cold numbers.
+## Esos cerebros tan hackables...
+::: columns
+::: {.column width="45%"}
+Regla del máximo y final 
+
+(Peak-End Rule)
+![](images/storytelling/sketplanation.png){fig-align="center"}
+[Imagen por sketplanation]{style="font-size: 0.6em; color: grey"}
+:::
+::: {.column width="55%" .fragment}
+[.]{style="font-size: 1.5em; color: white"}
+
+![](images/storytelling/got.jpg){fig-align="center"}
+[Rating de Game of Thrones, por Kelvin Neo]{.fragment style="font-size: 0.6em; color: grey"}
+:::
 :::
 
 --- 
+
+## Los 3 pilares de una presentación
+::: columns
+::: {.column width="45%" .fragment}
+* Audiencia
+* Tiempo
+* Objetivo
+:::
+::: {.column width="55%" .fragment}
+Comienza diseñando las últimas 5 slides de tu presentación.
+:::
+:::
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #2:** 
+
+Comienza por [el final]{.fragment}
+:::
+:::
+
+--- 
+
+
+## 
+![](images/scary/velocicoaster.jpg){fig-align="center"}
+
+---
+
+## 
+![](images/scary/public_speaking.jpeg){fig-align="center"}
+
+
+--- 
+
+## Sobreponerse al miedo
+::: columns
+::: {.column width="45%" .fragment}
+Lo físico 
+
+* Preparación
+* Práctica
+* Descanso 
+:::
+::: {.column width="55%" .fragment}
+Lo mental  
+
+* Actitud estoica
+* Aceptar sensaciones
+* Perspectiva de experimentación
+:::
+:::
+
+---
+
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #3:** 
+
+[El miedo]{.fragment} es normal
+:::
+:::
+
+---
 
 ## { .custom-section }
 
@@ -279,12 +299,6 @@ Los detalles son importantes,
 
 [pero no **todos** los detalles son importantes.]{.fragment}
 :::
-:::
-
-:::{.notes}
-So, details are important. [click] But not all details are important.
-On writing this is called the Chekhov's Gun: 
-If in the first act you describe a pistol hung on the wall, then the pistol must be fired at some point. Otherwise don’t put it there. (Chekhov's Gun)
 :::
 
 ---
@@ -659,7 +673,7 @@ But - it cannot do realtime code execution. It's not design for.
 
 ```{pyodide-python}
 saludo = "Hola"
-nombre = "Nerdearla"
+nombre = "mundo"
 print(saludo + " " + nombre)
 ```
 
