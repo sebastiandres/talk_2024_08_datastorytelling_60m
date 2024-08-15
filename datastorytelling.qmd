@@ -84,11 +84,37 @@ Siempre eleva la tensión y el dramatismo.
 
 ## Agenda (v2) { .custom-slide }
 ::: .incremental
-1. Nunca reveles el [final]{style="background-color:black;"}
-2. Los detalles son importantes, pero [no **todos** los detalles son importantes.]{style="background-color:black;"}
-3. Tu primera versión será [horrible.]{style="background-color:black;"}
-4. [Muestra más]{style="background-color:black;"}, explica menos.
+1. Nunca reveles el [final]{style="color:white; background-color:black;"}
+2. Planifica [el final]{style="background-color:black;"} para el resultado deseado
+3. [Tener nervios]{style="background-color:black;"} es normal
+4. Los detalles son importantes, pero [no **todos** los detalles son importantes]{style="background-color:black;"}
+5. Tu primera versión será [horrible]{style="background-color:black;"}
+6. Explica menos y [muestra más]{style="background-color:black;"}
 :::
+
+---
+
+## Mi historia en 4 gráficos
+
+![](code/1_UTFSM.png){fig-align="center"}
+
+---
+
+## Mi historia en 4 gráficos
+
+![](code/2_École_Polytechnique.png){fig-align="center"}
+
+---
+
+## Mi historia en 4 gráficos
+
+![](code/3_Stanford.png){fig-align="center"}
+
+---
+
+## Mi historia en 4 gráficos
+
+![](code/4_Trabajo.png){fig-align="center"}
 
 ---
 
@@ -175,13 +201,16 @@ Regla del máximo y final
 
 ## Los 3 pilares de una presentación
 ::: columns
-::: {.column width="45%" .fragment}
+::: {.column width="30%" .fragment}
 * Audiencia
 * Tiempo
 * Objetivo
 :::
-::: {.column width="55%" .fragment}
-Comienza diseñando las últimas 5 slides de tu presentación.
+::: {.column width="20%" .fragment}
+[→]{style="font-size: 3em; color: grey;"}
+:::
+::: {.column width="40%" .fragment}
+[Final]{style="font-size: 3em;"}
 :::
 :::
 
@@ -195,25 +224,37 @@ Comienza diseñando las últimas 5 slides de tu presentación.
 ::: {.column width="70%"}
 **Regla de Storytelling #2:** 
 
-Comienza por [el final]{.fragment}
+Planifica [el final]{style="color:white; background-color:black;" .fragment} para el resultado deseado
 :::
 :::
 
 --- 
 
+## Una pequeña historia personal (1/2)
 
-## 
-![](images/scary/velocicoaster.jpg){fig-align="center"}
+::: columns
+::: {.column width="40%" .fragment}
+![](images/story/pycon_acceptance.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+![](images/story/velocicoaster.jpg){fig-align="center"}
+:::
+:::
 
----
+## Una pequeña historia personal (2/2)
 
-## 
-![](images/scary/public_speaking.jpeg){fig-align="center"}
-
+::: columns
+::: {.column width="45%" .fragment}
+![](images/story/sick.jpeg){fig-align="center"}
+:::
+::: {.column width="45%" .fragment}
+![](images/story/public_speaking.jpeg){fig-align="center"}
+:::
+:::
 
 --- 
 
-## Sobreponerse al miedo
+## Sobreponerse a los nervios y el miedo
 ::: columns
 ::: {.column width="45%" .fragment}
 Lo físico 
@@ -242,7 +283,7 @@ Lo mental
 ::: {.column width="70%"}
 **Regla de Storytelling #3:** 
 
-[El miedo]{.fragment} es normal
+[Tener nervios]{style="color:white; background-color:black;" .fragment} es normal
 :::
 :::
 
@@ -253,10 +294,6 @@ Lo mental
 [Data Storytelling]{style="font-size: 1em"}
 
 [Herramienta #1: Visualización]{style="font-size: 2em"}
-
-:::{.notes}
-So, let me tell you about how visualization and storytelling are related.
-:::
 
 ---
 
@@ -274,15 +311,10 @@ So, let me tell you about how visualization and storytelling are related.
 
 . . .
 
-[¡Demasiadas opciones! <br> La audiencia **no puede** ser responsable de encontrar el valor.]{ style="background-color: #fff" }
+[¡Demasiadas opciones! <br> La audiencia **no puede** ser responsable de encontrar el valor]{ style="background-color: #fff" }
 
 :::{.notes}
 Google Looker [click] Tableau [click] PowerBI.
-As the name suggests, they are great tools to explore your data. This is a previous step to telling a story. This would be the equivalent to do the footwork of a reporter. Getting the news.
-But exploratory visualization is not what you need on your presentation. 
-You need to CRAFT what YOU want your audience to see.
-[click]
-Your audience is not resposible of finding the insights. You are.
 :::
 
 ---
@@ -293,11 +325,11 @@ Your audience is not resposible of finding the insights. You are.
 &#32;
 :::
 ::: {.column width="70%"}
-**Regla de Storytelling #2:** 
+**Regla de Storytelling #4:** 
 
 Los detalles son importantes, 
 
-[pero no **todos** los detalles son importantes.]{.fragment}
+[pero no **todos** los detalles son importantes]{style="color:white; background-color:black;" .fragment}
 :::
 :::
 
@@ -350,18 +382,7 @@ My advice: pick one and master it. You need to escape from default settings to d
 
 No compartas números. Comparte una historia.
 
-[(C) Storytelling with Data, por Cole Nussbaumer Knaflic.]{style="font-size: 0.75em; color: gray"}
-
-
-:::{.notes}
-Let me share an example from one of my favorite books on data storytelling.
-Here you can see a visualization with a standard, default visualization. 
-Nothing wrong with it. But it's boring.
-[click]
-Now, let's use the same data but reveal the story behind. You see things on a completely different perspective. You just put numbers where are needed, and call for an action! 
-[click]
-So, don't share numbers. Share a story. 
-:::
+[(C) Storytelling with Data, por Cole Nussbaumer Knaflic]{style="font-size: 0.75em; color: gray"}
 
 ---
 
@@ -474,15 +495,12 @@ Let's now discuss another interesting tool: Artificial Intelligence.
 &#32;
 :::
 ::: {.column width="70%"}
-**Regla de Storytelling #3:** 
+**Regla de Storytelling #5:** 
 
-Tu primera versión siempre será un borrador horrible.
+Tu primera versión siempre será [horrible]{style="color:white; background-color:black;" .fragment}
 :::
 :::
 
-:::{.notes}
-I want to relate this point to Regla de Storytelling #3: Your first draft is not gonna be good. Deal with it.
-:::
 ---
 
 ##
@@ -507,12 +525,6 @@ Utiliza tu tiempo inteligentemente.
 :::
 :::
 
-:::{.notes}
-AI can also be a good source of inspiration and help when making better presentations.
-It's really helpful to create images to complement your talk and illustrate your points. Use it to get ideas, analogies, examples, or event prompts to create better images. You can use AI to get your first draft very fast, and iterate from there.
-Think of AI as the friend that gives you some good and bad ideas. It's your responsability to select the good ones! For every image I put on the presentation, there are 10, 20 or more that I did not use!
-:::
-
 ---
 
 ## { .custom-section }
@@ -520,10 +532,6 @@ Think of AI as the friend that gives you some good and bad ideas. It's your resp
 [Data Storytelling]{style="font-size: 1em"}
 
 [Herramienta #3: Presentación]{style="font-size: 2em"}
-
-:::{.notes}
-Probably one of the tools where you can improve the most: presentation software.
-:::
 
 ---
 
@@ -533,17 +541,12 @@ Probably one of the tools where you can improve the most: presentation software.
 &#32;
 :::
 ::: {.column width="70%"}
-**Regla de Storytelling #4:** 
+**Regla de Storytelling #6:** 
 
 [Explicar menos]{style="color: red"} y [mostrar más]{style="color: green"}
 
 (Show, don't tell)
 :::
-:::
-
-:::{.notes}
-So this Regla de Storytelling is one of the simplest but one of the hardest.
-Show, don't tell. Let me give you an example.
 :::
 
 ---
@@ -562,13 +565,6 @@ Se levantó de su silla de un salto, con los puños en alto en señal de triunfo
 :::
 :::
 
-:::{.notes}
-Can you tell the difference between these two examples?
-[click]
-[click]
-You cannot tell someone to feel something. You have to give them the means and reasons to feel somthing.
-:::
-
 ---
 
 ## Herramientas para presentación
@@ -580,12 +576,6 @@ You cannot tell someone to feel something. You have to give them the means and r
   * html & webapps
 * Otros: canvas, revealjs, prezi
 
-:::{.notes}
-This relates to presenting software because the classic powerpoint software is not very helpful to share code. 
-To be honest, I fine tune my presentations till the last minute - inserting code screenshots is not fun! There are better ways.
-There are a couple of "show dont tell" tools: quarto, jupyter + RISE, and streamlit.
-Let me show you a bit of them.
-:::
 ---
 
 ## 
@@ -602,10 +592,6 @@ Se centra en el markdown científico, documentos dinámicos e interactivos basad
 ::: {.column width="40%"}
 ![https://quarto.org/](images/quarto/quarto2.png)
 :::
-:::
-
-:::{.notes}
-Quarto is a project from POSIT - they are actually on one of the booths, go get some stickers! You create a plain markdown, so the files and repos are clean and easy to maintain. You can create pretty much anything: Books, websites, and presentations. It’s quite incredible. This presentation has been made in quarto, BTW. For presentations, the markdown file is rendered into a html page with the revealjs library. It’s just a html webpage, so you can share it around and people should be able to open it without to much trouble - or convert it to pdf. 
 :::
 
 ---
@@ -718,27 +704,27 @@ Innovar es llamativo.
 * **html+webapps**: Presentaciones personalizadas/experimentales
 :::
 
-:::{.notes}
-My decision flow to choose a presentation sofware goes as:
-[click]
-PowerPoint: Single use no-code presentation. When I have no time. 
-[click]
-Quarto: Talks from related documents (books, articles) - but no need to execute code!
-[click]
-Jupyter + RISE: Workshops or classes. Executing code is important.
-[click]
-html+webapps: Customized/experimental presentations. 
-Nevertheless, I still follow the data Regla de Storytellings. It's just the software that it changes. I have to confess, my slides are kind of my babies. I spent too much time on them, tweaking, changing small details only I will notice, learning how to push the software a bit beyond limits. I think people can notice when you put love into something. 
+
+---
+
+## { .custom-slide }
+::: columns
+::: {.column width="10%"}
+&#32;
+:::
+::: {.column width="70%"}
+**Regla de Storytelling #6:** 
+
+Elige la herramienta que te permita
+
+[explicar menos]{style="color:red;" .fragment} y [mostrar más]{style="color:green;" .fragment}
+:::
 :::
 
 ---
 
 ## { .custom-section }
 [Final]{style="font-size: 2em"}
-
-:::{.notes}
-So, let's wrap up.
-:::
 
 ---
 
@@ -756,16 +742,14 @@ So, let's wrap up.
 
 ---
 
-## Agenda (v2) { .custom-slide }
+## Reglas de Storytelling { .custom-slide }
 ::: .incremental
-1. Nunca reveles el [**final**]{.fragment style="color:white;background-color:black;"}
-2. Los detalles son importantes, pero [no **todos** los detalles son importantes]{.fragment style="color:white;background-color:black;"}
-3. Tu primera versión será [**horrible**]{.fragment style="color:white;background-color:black;"}
-4. [**Muestra más**]{.fragment style="color:white;background-color:black;"}, explica menos.
-:::
-
-::: {.notes}
-La solución.
+1. Nunca reveles el [final]{style="color:white; background-color:black;" .fragment}
+2. Planifica [el final]{style="color:white; background-color:black;" .fragment} para el resultado deseado
+3. [Tener nervios]{style="color:white; background-color:black;" .fragment} es normal
+4. Los detalles son importantes, pero [no **todos** los detalles son importantes]{style="color:white; background-color:black;" .fragment}
+5. Tu primera versión será [horrible]{style="color:white; background-color:black;" .fragment}
+6. Explica menos y [muestra más]{style="color:white; background-color:black;" .fragment}
 :::
 
 ---
@@ -782,14 +766,15 @@ La solución.
 
 ---
 
-
 ## Feedback
 
-Un último consejo ...
+**Última Regla de Storytelling:** 
 
-[¡Pide retroalimentación de tus presentaciones!]{.fragment}
+[¡¡¡El arte y la ciencia son procesos **iterativos** y **colaborativos**!!!]{.fragment}
 
-[¡Aprovecha de hacer crecer tu red de contactos!]{.fragment}
+[Pide retroalimentación. Ayuda, aprende y enseña a tus colegas]{.fragment}
+
+[Aprovecha de hacer crecer tu red de contactos]{.fragment}
 
 ---
 
