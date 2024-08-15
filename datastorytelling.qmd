@@ -17,7 +17,7 @@ format:
     output-file: "datastorytelling"
     theme:
         - simple
-        - style/style_background_nerdearla.scss
+        - style/style_background.scss
 filters: 
   - pyodide
 ---
@@ -375,9 +375,9 @@ from ipyvizzu import Data, Config, Style
 from ipyvizzustory import Story, Slide, Step
 
 # Import the date
-df = pd.read_excel("./data/nerdearla_conference.xlsx", 
-            dtype={"año": str, "lugar": str, "asistentes": int, "modalidad":str})
-df["year_num"] = df["año"].astype(int)
+df = pd.read_excel("./data/python_conference.xlsx", 
+            dtype={"year": str, "location": str, "attendees": int, "type":str})
+df["year_num"] = df["year"].astype(int)
 
 # Create story object, add data to it
 data = Data()
@@ -393,12 +393,12 @@ slide = Slide(
     Step(
         Config.stackedColumn(
             {
-                "x": "año",
-                "y": "asistentes",
-                "title": "Asistentes a Nerdearla ",
+                "x": "year",
+                "y": "attendees",
+                "title": "Pycon Attendees",
             }
         ),
-        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -408,13 +408,13 @@ slide = Slide(
     Step(
         Config.stackedColumn(
             {
-                "x": "año",
-                "y": "asistentes",
-                "stackedBy": "modalidad",
-                "title": "Asistentes a Nerdearla",
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
+                "title": "Pycon Attendees per type",
             }
         ),
-        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -422,32 +422,31 @@ story.add_slide(slide)
 # Visualization 3
 slide = Slide(
     Step(
-        Data.filter("record.year_num >= 2020"),
+        Data.filter("record.year_num >= 2021"),
         Config.stackedColumn(
             {
-                "x": "año",
-                "y": "asistentes",
-                "stackedBy": "modalidad",
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
             }
         ),
-        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
-
 
 # Visualization 4
 slide = Slide(
     Step(
         Config.percentageColumn(
             {
-                "x": "año",
-                "y": "porcentaje",
-                "stackedBy": "modalidad",
-                "title": "Asistentes a Nerdearla (porcentaje)",
+                "x": "year",
+                "y": "attendees",
+                "stackedBy": "type",
+                "title": "Pycon Attendees per type (percentage)",
             }
         ),
-        #Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
     )
 )
 story.add_slide(slide)
@@ -656,17 +655,6 @@ format:
 :::
 
 
-
-:::{.notes}
-So here on the left I have the code that produces the slides on the right.
-As you can see, it's just a plain file.
-It starts with a configuration part, and lots of other options are possible.
-You get the table of contents for free (if you want it!)
-You can even do incremental slides or reveal by fragments.
-You have to compile/render before the presentation, so little changes of getting errors during the presentation.
-But - it cannot do realtime code execution. It's not design for.
-:::
-
 ---
 
 ## 
@@ -701,19 +689,12 @@ Extensión de Jupyter notebook/lab para transformar un notebooks en slides de re
 :::
 :::
 
-:::{.notes}
-An alternative to quarto is to use jupyter notebook and use the rise extension.
-You have to manually define each of your cells to be a part of a slide or to be skipped.  
-:::
 ---
 
 [Jupyter + RISE]{style="font-size: 1em; color: gray"}
 
 <img style="width:80%;" src="./images/rise/basic_usage.gif">
 
-:::{.notes}
-You click on the "launch slideshow" button, and a dynamic presentation is created on the fly. Same as quarto, it uses the revealjs javascript library as backend, but it can execute python code (or your kernel's language) on the fly. This is very useful if you are running a tutorial or something that needs that kind of interactivity.
-:::
 ---
 
 ## 
@@ -726,9 +707,6 @@ Innovar es llamativo.
 
 <img style="width:80%;" src="./images/streamlit/pyconchile2021.gif">
 
-:::{.notes}
-Sometimes it just makes sense. I did a presentation on PyCon Chile 2021 about Streamlit, and it felt natural to explain the library using the library to create the presentation. It made sense, as I could show the code and execute the code, without having to go back and forth between a presentation and a terminal. The main point is, again, Show dont tell. On presentations about code, don't tell me how to use it, show me how to use it!
-:::
 ---
 
 ## Flujo de decisión

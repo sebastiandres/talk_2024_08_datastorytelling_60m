@@ -484,7 +484,7 @@
   }
 
   // Store cell data
-  globalThis.qpyodideCellDetails = [{"code":"saludo = \"Hola\"\nnombre = \"mundo\"\nprint(saludo + \" \" + nombre)","options":{"fig-height":5,"out-height":"","warning":"true","output":"true","comment":"","label":"","read-only":"false","results":"markup","classes":"","context":"interactive","dpi":72,"autorun":"","out-width":"700px","fig-cap":"","message":"true","fig-width":7},"id":1},{"code":"# ¿Que vino primero, el huevo o la gallina?\nsorted(['🥚','🐔'])","options":{"fig-height":5,"out-height":"","warning":"true","output":"true","comment":"","label":"","read-only":"false","results":"markup","classes":"","context":"interactive","dpi":72,"autorun":"","out-width":"700px","fig-cap":"","message":"true","fig-width":7},"id":2}];
+  globalThis.qpyodideCellDetails = [{"code":"saludo = \"Hola\"\nnombre = \"mundo\"\nprint(saludo + \" \" + nombre)","options":{"out-width":"700px","read-only":"false","results":"markup","output":"true","dpi":72,"autorun":"","warning":"true","context":"interactive","comment":"","label":"","classes":"","fig-height":5,"fig-cap":"","message":"true","fig-width":7,"out-height":""},"id":1},{"code":"# ¿Que vino primero, el huevo o la gallina?\nsorted(['🥚','🐔'])","options":{"out-width":"700px","read-only":"false","results":"markup","output":"true","dpi":72,"autorun":"","warning":"true","context":"interactive","comment":"","label":"","classes":"","fig-height":5,"fig-cap":"","message":"true","fig-width":7,"out-height":""},"id":2}];
 
 
   </script>
@@ -1027,11 +1027,11 @@
 </section>
 <section id="vizzu-una-librería-para-data-storytelling" class="slide level2 center">
 <h2>Vizzu: Una librería para Data Storytelling</h2>
-<div id="f6916ab8" class="cell" data-execution_count="1">
+<div id="c61c48dc" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 
 <div>
-    <vizzu-player id="35ff180" controller=""></vizzu-player>
+    <vizzu-player id="27054e7" controller=""></vizzu-player>
     <script type="module">
         import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
 
@@ -1112,7 +1112,7 @@
             }
         }
 
-        const vp = document.getElementById("35ff180");
+        const vp = document.getElementById("27054e7");
         vp.initializing.then(chart => {
             const lib = vp.Vizzu;
 
@@ -1128,7 +1128,7 @@
                 // story.add_event()
                 
 
-                const vizzuPlayerData = {"data": {"series": [{"name": "a\u00f1o", "values": ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"], "type": "dimension"}, {"name": "lugar", "values": ["Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla", "Nerdearla"], "type": "dimension"}, {"name": "modalidad", "values": ["presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "presencial", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual", "virtual"], "type": "dimension"}, {"name": "asistentes", "values": [66.0, 140.0, 345.0, 1100.0, 1800.0, 3500.0, 0.0, 0.0, 7000.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20000.0, 25000.0, 22000.0, 27000.0], "type": "measure"}, {"name": "porcentaje", "values": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 0.0, 0.0, 24.0, 27.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0, 100.0, 76.0, 73.0], "type": "measure"}, {"name": "year_num", "values": [2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'title': 'Asistentes a Nerdearla '})}], [{"config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'modalidad', 'title': 'Asistentes a Nerdearla'})}], [{"filter": record => { return (record.year_num >= 2020) }, "config": lib.presets.stackedColumn({'x': 'año', 'y': 'asistentes', 'stackedBy': 'modalidad'})}], [{"config": lib.presets.percentageColumn({'x': 'año', 'y': 'porcentaje', 'stackedBy': 'modalidad', 'title': 'Asistentes a Nerdearla (porcentaje)'})}]]};
+                const vizzuPlayerData = {"data": {"series": [{"name": "year", "values": ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"], "type": "dimension"}, {"name": "location", "values": ["Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)", "Washington, D.C.", "Washington, D.C.", "Washington, D.C.", "Dallas, Texas", "Dallas, Texas", "Chicago, Illinois", "Chicago, Illinois", "Atlanta, Georgia", "Atlanta, Georgia", "Santa Clara, California", "Santa Clara, California", "Montreal, Quebec (Canada)", "Montreal, Quebec (Canada)", "Portland, Oregon", "Portland, Oregon", "Cleveland, Ohio", "Cleveland, Ohio", "COVID", "COVID", "Salt Lake City, Utah", "Salt Lake City, Utah", "Pittsburgh, Pennsylvania (Planned)"], "type": "dimension"}, {"name": "type", "values": ["in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "in-person", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online", "online"], "type": "dimension"}, {"name": "attendees", "values": [200.0, 300.0, 400.0, 400.0, 500.0, 1000.0, 900.0, 1000.0, 1400.0, 2300.0, 2500.0, 2500.0, 3100.0, 3294.0, 3391.0, 3260.0, 3393.0, 0.0, 0.0, 1753.0, 2159.0, 2738.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2650.0, 669.0, 491.0, 395.0], "type": "measure"}, {"name": "year_num", "values": [2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0, 2003.0, 2004.0, 2005.0, 2006.0, 2007.0, 2008.0, 2009.0, 2010.0, 2011.0, 2012.0, 2013.0, 2014.0, 2015.0, 2016.0, 2017.0, 2018.0, 2019.0, 2020.0, 2021.0, 2022.0, 2023.0, 2024.0], "type": "measure"}]}, "slides": [[{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'title': 'Pycon Attendees'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Pycon Attendees per type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"filter": record => { return (record.year_num >= 2021) }, "config": lib.presets.stackedColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}], [{"config": lib.presets.percentageColumn({'x': 'year', 'y': 'attendees', 'stackedBy': 'type', 'title': 'Pycon Attendees per type (percentage)'}), "style": {"plot": {"xAxis": {"label": {"angle": 2.0}}}}}]]};
                 vp.slides = vizzuPlayerData;
             });
         });
@@ -1377,19 +1377,6 @@ format:
 <iframe width="600" height="400" src="quarto_min.html"></iframe>
 </div>
 </div>
-<aside class="notes">
-<p>So here on the left I have the code that produces the slides on the right. As you can see, it’s just a plain file. It starts with a configuration part, and lots of other options are possible. You get the table of contents for free (if you want it!) You can even do incremental slides or reveal by fragments. You have to compile/render before the presentation, so little changes of getting errors during the presentation. But - it cannot do realtime code execution. It’s not design for.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="section-19" class="slide level2 center">
 <h2></h2>
@@ -1415,37 +1402,11 @@ format:
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>An alternative to quarto is to use jupyter notebook and use the rise extension. You have to manually define each of your cells to be a part of a slide or to be skipped.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section class="slide level2 center">
 
 <p><span style="font-size: 1em; color: gray">Jupyter + RISE</span></p>
 <p><img style="width:80%;" src="./images/rise/basic_usage.gif"></p>
-<aside class="notes">
-<p>You click on the “launch slideshow” button, and a dynamic presentation is created on the fly. Same as quarto, it uses the revealjs javascript library as backend, but it can execute python code (or your kernel’s language) on the fly. This is very useful if you are running a tutorial or something that needs that kind of interactivity.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="section-21" class="slide level2 center">
 <h2></h2>
@@ -1453,19 +1414,6 @@ format:
 <p>Usa la herramienta adecuada a lo que quieras enseñar.</p>
 <p>Innovar es llamativo.</p>
 <p><img style="width:80%;" src="./images/streamlit/pyconchile2021.gif"></p>
-<aside class="notes">
-<p>Sometimes it just makes sense. I did a presentation on PyCon Chile 2021 about Streamlit, and it felt natural to explain the library using the library to create the presentation. It made sense, as I could show the code and execute the code, without having to go back and forth between a presentation and a terminal. The main point is, again, Show dont tell. On presentations about code, don’t tell me how to use it, show me how to use it!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="flujo-de-decisión" class="slide level2 center">
 <h2>Flujo de decisión</h2>
