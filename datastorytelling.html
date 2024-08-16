@@ -484,7 +484,7 @@
   }
 
   // Store cell data
-  globalThis.qpyodideCellDetails = [{"code":"saludo = \"Hola\"\nnombre = \"mundo\"\nprint(saludo + \" \" + nombre)","options":{"output":"true","out-width":"700px","fig-cap":"","autorun":"","out-height":"","warning":"true","message":"true","dpi":72,"results":"markup","fig-height":5,"context":"interactive","fig-width":7,"comment":"","classes":"","read-only":"false","label":""},"id":1},{"code":"# ¿Que vino primero, el huevo o la gallina?\nsorted(['🥚','🐔'])","options":{"output":"true","out-width":"700px","fig-cap":"","autorun":"","out-height":"","warning":"true","message":"true","dpi":72,"results":"markup","fig-height":5,"context":"interactive","fig-width":7,"comment":"","classes":"","read-only":"false","label":""},"id":2}];
+  globalThis.qpyodideCellDetails = [{"id":1,"options":{"message":"true","results":"markup","out-width":"700px","context":"interactive","warning":"true","classes":"","output":"true","label":"","comment":"","autorun":"","fig-height":5,"dpi":72,"fig-cap":"","out-height":"","read-only":"false","fig-width":7},"code":"saludo = \"Hola\"\nnombre = \"mundo\"\nprint(saludo + \" \" + nombre)"},{"id":2,"options":{"message":"true","results":"markup","out-width":"700px","context":"interactive","warning":"true","classes":"","output":"true","label":"","comment":"","autorun":"","fig-height":5,"dpi":72,"fig-cap":"","out-height":"","read-only":"false","fig-width":7},"code":"# ¿Que vino primero, el huevo o la gallina?\nsorted(['🥚','🐔'])"}];
 
 
   </script>
@@ -759,7 +759,7 @@
 <h2>Mi historia en 4 gráficos</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="code/1_UTFSM.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="code/0_baseline.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </section>
@@ -767,7 +767,7 @@
 <h2>Mi historia en 4 gráficos</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="code/2_École_Polytechnique.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="code/1_UTFSM.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </section>
@@ -775,11 +775,19 @@
 <h2>Mi historia en 4 gráficos</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="code/3_Stanford.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="code/2_École_Polytechnique.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </section>
 <section id="mi-historia-en-4-gráficos-3" class="slide level2 center">
+<h2>Mi historia en 4 gráficos</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="code/3_Stanford.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</section>
+<section id="mi-historia-en-4-gráficos-4" class="slide level2 center">
 <h2>Mi historia en 4 gráficos</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1057,11 +1065,11 @@
 </section>
 <section id="vizzu-una-librería-para-data-storytelling" class="slide level2 center">
 <h2>Vizzu: Una librería para Data Storytelling</h2>
-<div id="2d597512" class="cell" data-execution_count="1">
+<div id="b69fa8d2" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 
 <div>
-    <vizzu-player id="2629f2b" controller=""></vizzu-player>
+    <vizzu-player id="eed8a99" controller=""></vizzu-player>
     <script type="module">
         import VizzuPlayer from "https://cdn.jsdelivr.net/npm/vizzu-story@0.7/dist/vizzu-story.min.js";
 
@@ -1142,7 +1150,7 @@
             }
         }
 
-        const vp = document.getElementById("2629f2b");
+        const vp = document.getElementById("eed8a99");
         vp.initializing.then(chart => {
             const lib = vp.Vizzu;
 
@@ -1381,6 +1389,18 @@ format:
 <h2></h2>
 <p><span style="font-size: 2em">Final</span></p>
 </section>
+<section id="two-stories" class="slide level2 center">
+<h2>Two stories</h2>
+<div class="columns" style="text-align: center">
+<div class="column" style="width:10%;">
+
+</div><div class="column fragment" style="width:40%;">
+<p><img data-src="images/wrapup/finding_missing_piece.jpeg" class="quarto-figure quarto-figure-center"> Data Storytelling para mi</p>
+</div><div class="column fragment" style="width:40%;">
+<p><img data-src="images/wrapup/new_tool.jpeg" class="quarto-figure quarto-figure-center"> ¿Data Storytelling para tí?</p>
+</div>
+</div>
+</section>
 <section id="data-storytelling-es" class="slide level2 custom-slide center">
 <h2>Data Storytelling es …</h2>
 <div class="columns">
@@ -1424,7 +1444,7 @@ format:
 <section id="feedback" class="slide level2 center">
 <h2>Feedback</h2>
 <p><strong>Última Regla de Storytelling:</strong></p>
-<p><span class="fragment">¡¡¡El arte y la ciencia son procesos <strong>iterativos</strong> y <strong>colaborativos</strong>!!!</span></p>
+<p><span class="fragment" style="color:white; background-color:black;">¡¡¡El arte y la ciencia son procesos <strong>iterativos</strong> y <strong>colaborativos</strong>!!!</span></p>
 <p><span class="fragment">Pide retroalimentación. Ayuda, aprende y enseña a tus colegas</span></p>
 <p><span class="fragment">Aprovecha de hacer crecer tu red de contactos</span></p>
 </section>

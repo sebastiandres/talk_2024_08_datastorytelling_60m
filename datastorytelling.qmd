@@ -96,6 +96,12 @@ Siempre eleva la tensión y el dramatismo.
 
 ## Mi historia en 4 gráficos
 
+![](code/0_baseline.png){fig-align="center"}
+
+---
+
+## Mi historia en 4 gráficos
+
 ![](code/1_UTFSM.png){fig-align="center"}
 
 ---
@@ -728,6 +734,22 @@ Elige la herramienta que te permita
 
 ---
 
+## Two stories
+::: {.columns style="text-align: center"}
+::: {.column width="10%"}
+:::
+::: {.column width="40%" .fragment}
+![](images/wrapup/finding_missing_piece.jpeg){fig-align="center"}
+Data Storytelling para mi
+:::
+::: {.column width="40%" .fragment}
+![](images/wrapup/new_tool.jpeg){fig-align="center"}
+¿Data Storytelling para tí?
+:::
+:::
+
+---
+
 ## Data Storytelling es ... { .custom-slide }
 ::: columns
 ::: {.column width="5%"}
@@ -770,7 +792,7 @@ Elige la herramienta que te permita
 
 **Última Regla de Storytelling:** 
 
-[¡¡¡El arte y la ciencia son procesos **iterativos** y **colaborativos**!!!]{.fragment}
+[¡¡¡El arte y la ciencia son procesos **iterativos** y **colaborativos**!!!]{style="color:white; background-color:black;" .fragment}
 
 [Pide retroalimentación. Ayuda, aprende y enseña a tus colegas]{.fragment}
 

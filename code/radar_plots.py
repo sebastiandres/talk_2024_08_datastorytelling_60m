@@ -47,11 +47,12 @@ def add_values_to_plot(ax, n, angles, all_values, color, name):
         if i==(n-1):
             ax.fill(angles, values, c, alpha=0.1)
 
-    # Add legend
-    custom_lines = [Line2D([0], [0], color=color, lw=1)]
-    # Position outside the plot so it won't overlap with the data
-    ax.legend(custom_lines, [name], fontsize=FONT_SIZE,
-            bbox_to_anchor=(1.05, 1), loc='upper left')
+    if n>0:
+        # Add legend
+        custom_lines = [Line2D([0], [0], color=color, lw=1)]
+        # Position outside the plot so it won't overlap with the data
+        ax.legend(custom_lines, [name], fontsize=FONT_SIZE,
+                bbox_to_anchor=(1.05, 1), loc='upper left')
 
     # Show the graph
     name_clean = name.split(",")[0].replace(" ", "_")
@@ -70,7 +71,8 @@ def create_radar_plot(df, n, color, name):
 
 if __name__=="__main__":
     df = pd.read_excel("../data/strengths_sebastian_flores.xlsx")
-    create_radar_plot(df, 1, 'g', name="UTFSM, Chile")
+    create_radar_plot(df, 0, 'k', name="baseline")
+    create_radar_plot(df, 1, 'k', name="UTFSM, Chile")
     create_radar_plot(df, 2, 'b', name="École Polytechnique,\nFrancia")
     create_radar_plot(df, 3, 'r', name="Stanford, USA")
     create_radar_plot(df, 4, 'g', name="Trabajo")
