@@ -1,5 +1,5 @@
 render:
-	quarto render datastorytelling.qmd
+	quarto render datastorytelling_uplanner.qmd
 
 view:
-	open datastorytelling.html
+	open datastorytelling_uplanner.html
